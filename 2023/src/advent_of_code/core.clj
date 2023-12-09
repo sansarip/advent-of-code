@@ -3,7 +3,8 @@
             [advent-of-code.day2.core :as day2]
             [advent-of-code.day3.core :as day3]
             [advent-of-code.day4.core :as day4]
-            [advent-of-code.day5.core :as day5]))
+            [advent-of-code.day5.core :as day5]
+            [advent-of-code.day6.core :as day6]))
 
 (defn print-banner [text]
   (println (str "================================================================================\n"
@@ -24,3 +25,4 @@
 (print-solution 3 (day3/solve-part-1) (day3/solve-part-2))
 (print-solution 4 (day4/solve-part-1) (day4/solve-part-2))
 (print-solution 5 (day5/solve-part-1))
+(print-solution 6 (day6/solve-part-1) (day6/solve-part-2))
