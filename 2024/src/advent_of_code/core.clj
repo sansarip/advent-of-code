@@ -1,5 +1,6 @@
 (ns advent-of-code.core
-  (:require [advent-of-code.day1.core :as day1]))
+  (:require [advent-of-code.day1.core :as day1]
+            [advent-of-code.day2.core :as day2]))
 
 (defn print-banner [text]
   (println (str "================================================================================\n"
@@ -16,3 +17,4 @@
 
 
 (print-solution 1 (day1/solve-part-1) (day1/solve-part-2))
+(print-solution 2 (day2/solve-part-1) (day2/solve-part-2))
