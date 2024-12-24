@@ -6,3 +6,4 @@
 (deftest test-part-1
   (let [expected 31]
     (is (= expected (d1p2/solve-part-2 (io/resource "day-01-example.txt"))))))
+
