@@ -21,7 +21,7 @@
         x-count (atom 0)]
     (doseq [x (range (count (grid 0)))
             y (range (count grid))]
-      (when (and x y (= \A (utils/get-in-grid grid [x y])) 
+      (when (and (= \A (utils/get-in-grid grid [x y])) 
                  (x? grid [x y] ms-mapping))
         (swap! x-count inc)))
     @x-count))
